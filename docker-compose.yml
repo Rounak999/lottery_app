@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  lottery_db:
+    image: xploiterd/lottery_db
+    container_name: lottery_db
+    environment:
+      POSTGRES_DB: lottety
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: rounak
+    networks:
+      - lottery_network
+
+  lottery_app:
+    image: xploiterd/lottery_app
+    container_name: lottery_app
+    depends_on:
+      - lottery_db
+    ports:
+      - "80:8080"
+    networks:
+      - lottery_network
+
+networks:
+  lottery_network:
+    driver: bridge
