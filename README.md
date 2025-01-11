@@ -1,6 +1,13 @@
-This is a JSP based CTF, where the mail goal is to go through source code and find a way to guess the lottery number.
+## JSP-Based CTF: Guess the Lottery Number
 
-Docker app - https://hub.docker.com/repository/docker/xploiterd/lottery_app/general
-DB link - https://hub.docker.com/repository/docker/xploiterd/lottery_db/general
+Welcome to the JSP-based Capture The Flag (CTF) challenge. Your objective is to go through the source code and find a way to guess the lottery number. Ready to dive in?
 
-To start the CTF just download docker-compose.yml file and run command **docker-compose up -d**
+### Getting Started
+
+1. **Download the Docker Compose File:**
+   - Docker App: [xploiterd/lottery_app](https://hub.docker.com/repository/docker/xploiterd/lottery_app/general)
+   - Database: [xploiterd/lottery_db](https://hub.docker.com/repository/docker/xploiterd/lottery_db/general)
+
+2. **Run the Docker Compose Command:**
+   ```bash
+   docker-compose up -d
